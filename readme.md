@@ -8,7 +8,8 @@ The system is designed with production style logic and controlled external acces
 ## Features
 - Movie similarity prediction using cosine similarity  
 - Feature based comparison using genres, keywords, cast, and metadata  
-- AI agent with live web search support  
+- AI agent with live web search support
+- data validation through pydantic 
 - Real time movie overview generation  
 - Rate limiting for external APIs and web requests  
 - Modular and clean Python codebase  
@@ -27,7 +28,7 @@ Workflow:
 ## AI Agent Overview
 The AI agent fetches live movie data from the web.  
 It generates concise and updated movie summaries.  
-This avoids reliance on static or outdated datasets.
+This avoids reliance on static or outdated datasets with limited data.
 
 Agent capabilities:
 - Web search for movie details  
@@ -39,12 +40,13 @@ Rate limiting is applied to control request frequency.
 It prevents API abuse and ensures stable system behavior.  
 Limits apply to all web search and external API calls.
 
-## Tech Stack
+## Tech Stack/Tool
 - Python  
 - Scikit-learn  
 - Cosine Similarity  
-- Web Search APIs  
-- Agent Framework  
+- DuckDuckGO Web Search API
+- Groq API 
+- Agent Framework(Langchain)  
 - Requests and Rate Limiting Utilities  
 
 ## Use Cases
@@ -56,14 +58,9 @@ Limits apply to all web search and external API calls.
 ## How to Run
 1. Clone the repository  
 2. Install required dependencies  
-3. Run the recommendation module  
-4. Run the AI agent for live movie overviews  
+3. Run the main module  
 
-## Future Improvements
-- User preference based personalization  
-- Improved feature weighting  
-- Web response caching  
-- Frontend integration  
+
 
 ## Summary
 This project demonstrates applied machine learning and agent based AI using real world constraints and live data.
