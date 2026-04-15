@@ -1,4 +1,4 @@
-# Movie Recommendation and AI Agent System
+# Movie Recommendation and Real Time Summary Generation 
 
 ## Overview
 This project predicts similar movies using machine learning and cosine similarity.  
