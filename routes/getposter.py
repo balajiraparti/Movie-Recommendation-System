@@ -39,7 +39,7 @@ def web_search(query:str):
     search.invoke(query)
   
 def generate_overview(movie_name:str):
-    llm=ChatGroq(model="openai/gpt-oss-20b")
+    llm=ChatGroq(model="openai/gpt-oss-20b",api_key=st.secrets['GROQ_API_KEY'])
  
 #     messages = [
 #     (

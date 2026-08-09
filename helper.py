@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import requests
 import time
+import streamlit as st
 load_dotenv()
 def fetch_poster(movie_name: str) -> str | None:
     search_url = "https://api.themoviedb.org/3/search/movie"
@@ -10,7 +11,7 @@ def fetch_poster(movie_name: str) -> str | None:
    
 
     params = {
-        "api_key":os.getenv("API_KEY"),
+        "api_key":st.secrets['API_KEY'],
         "query": movie_name
     }
 

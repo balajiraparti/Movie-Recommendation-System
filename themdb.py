@@ -11,7 +11,7 @@ def get_movie_poster(movie_name):
     search_url = "https://api.themoviedb.org/3/search/movie"
     
     params = {
-        "api_key": "15d2ea6d0dc1d476efbca3eba2b9bbfb",
+        "api_key": "2027ae725c93f7d5435f17106e4182aa",
         "query": movie_name
     }
     

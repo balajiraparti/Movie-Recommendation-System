@@ -23,6 +23,7 @@ st.session_state.movie_name=st.text_input("Enter movie name:")
 if st.button('recommend'):
     if st.session_state.movie_name:
         st.session_state.similar_idx=recommendation(st.session_state.movie_name)
+        print(st.session_state.similar_idx)
         st.session_state.poster_details=get_movie_poster(st.session_state.similar_idx)
         
 if st.session_state.poster_details:
